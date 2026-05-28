@@ -1,8 +1,8 @@
 /* I. Selectors */
 /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
 article {
-    margin: 20px 0;
-    padding: 20px;
+    margin: 100px 0;
+    padding: 50px;
     border: 1px solid black;
 }
 
@@ -26,18 +26,29 @@ p {
     background-color: lightgreen;
 }
 /* Put styles for questions 2.1 and 2.2 here */
-.box {
-    background-color: aqua;
-    margin: 30px;
-    padding: 10px;
-    width: 50%;
-    height: 100;
-    border: 5px solid pink;
-
-}
 
 /* II. Box model and common properties */
+
 /* Put styles for questions 1-8 here */
+.box {
+  /* Size */
+  width: 200px;
+  height: 80px;
+
+  /* Spacing */
+  margin: 20px;
+  padding: 10px;
+
+  /* Border */
+  border: 10px solid pink;
+  border-radius: 20px;
+
+  /* Background */
+  background: bisque url("./assets/images/img1.png") no-repeat center / cover;
+
+  /* Overflow */
+  overflow: scroll;
+}
 
 
 /* III. Positioning */
