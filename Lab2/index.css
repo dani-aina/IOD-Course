@@ -93,7 +93,48 @@ p {
 }
 /* V. Styling links */
 /* Put styles for questions 1-3 here */
+a {
+    font-size: larger;
+    font-weight: 700;
+    text-decoration: none;
+}
 
+a:link {
+    color: blue;
+}
 
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+    /*font-style: italic;*/
+}
 /* VI. calc() */
 /* Put styles for questions 1-3 here */
+.calc-style {
+    background-color: antiquewhite;
+    width: calc(100vw - 100px);
+}
+
+.fixed-width-col {
+    width: 350px;
+    display: inline-block;
+}
+
+.fluid-col {
+    display: inline-block;
+    width: calc(100% - 350px);
+}
