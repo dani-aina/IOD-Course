@@ -73,8 +73,24 @@ p {
 
 /* IV. Styling text */
 /* Put styles for questions 1-10 here */
+.text-style {
+    color:aquamarine;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 200;
+}
 
+.text-style {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
 
+    text-align: justify;
+    letter-spacing: 20px;
+    word-spacing: 5px;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
 /* V. Styling links */
 /* Put styles for questions 1-3 here */
 
