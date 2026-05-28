@@ -8,7 +8,8 @@
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
+      <a href="index.html">Home</a>
+      <a href="form.html"></a>
     </nav>
     <form>
       <div>
@@ -20,6 +21,7 @@
         <input type="text" name="lastName"><br><br>
       </div>
       <div>
+        <label for="favouriteLang">Choose your favourite language:</label><br>
         <input type="radio" name="language" value="HTML">
         <label for="HTML">HTML</label><br>
 
@@ -30,12 +32,23 @@
         <label for="JavaScript">JavaScript</label><br><br>
       </div>
       <div>
-        <input type="checkbox" name="vehicle" value="Motorbike">
-        <label for="Motorbike">Motorbike</label><br>
-        <input type="checkbox" name="vehicle" value="Bike">
-        <label for="Bike">Bike</label><br>
-        <input type="checkbox" name="vehicle" value="Car">
-        <label for="Car">Car</label><br>
+        <label for="vehicleType">Choose your vehicle type:</label><br>
+        <input type="checkbox" name="vehicle" value="motorbike">
+        <label for="motorbike">Motorbike</label><br>
+        <input type="checkbox" name="vehicle" value="bike">
+        <label for="bike">Bike</label><br>
+        <input type="checkbox" name="vehicle" value="car">
+        <label for="car">Car</label><br>
+        <label for="chooseCar">Choose brand of car:</label>
+        <select id="chooseCar" name="chooseCar">
+          <option value="" disabled selected>Brand of car</option>
+          <option>Mazda</option>
+          <option>Suzuki</option>
+          <option>Toyota</option>
+          <option>Audi</option>
+          <option>Fiat</option>
+          <option>BMW</option>
+        </select>
       </div>
 
 
