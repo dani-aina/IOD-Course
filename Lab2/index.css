@@ -50,10 +50,26 @@ p {
   overflow: scroll;
 }
 
-
 /* III. Positioning */
 /* Put styles for questions 1-3 here */
+.position-absolute {
+    position: absolute;
+    top: 0;
+    background-color: pink;
+}
 
+.position-relative {
+    position: relative;
+    left: 50px;
+    right: 30px;
+    background-color: hotpink;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+    background-color: indianred;
+}
 
 /* IV. Styling text */
 /* Put styles for questions 1-10 here */
