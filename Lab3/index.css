@@ -43,6 +43,7 @@ a {
 
 .flex-container {
     display: flex;
+    flex-direction: row;
 }
 
 .flex-item-1 { 
@@ -64,4 +65,35 @@ a {
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-basis-item-50 {
+    flex-basis: 25%;
+}
+
+.flex-menu {
+    list-style: none;  /* removes the bullet points from the <ul> */
+    padding: 0;        /* removes default ul padding */
+    margin: 0;
+    justify-content: center;
+}
+
+.flex-menu li {
+    padding: 20px;
+    font-weight: 700;   /* makes bold */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-item {
+    order: 1;
 }
