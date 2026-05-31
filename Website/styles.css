@@ -1,24 +1,38 @@
 html, body {
-    background-color: #7893ac;
+  background-color: #7893ac;
+  margin: 0;
 }
 
 body {
-    font-family: "Inconsolata", monospace;
-    font-size: 16px;
-    color: #e6b9b8;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  color: #e6b9b8;
 }
 
 h1, h2 {
-    font-weight: 600;
-    text-align: center;
+  font-weight: 600;
+  text-align: center;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience h2 {
+  width: 100%;
+}
+
+.experience-item {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+img {
+    
+}
