@@ -19,6 +19,9 @@ header {
     background-color:#e6b9b8;
     color: #7893ac; 
     width: 100%;
+
+    position: sticky;
+    top: 0;
 }
 
 h1, h2 {
@@ -33,6 +36,7 @@ p {
 .experience {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .experience h2 {
