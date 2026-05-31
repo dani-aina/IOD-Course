@@ -9,6 +9,18 @@ body {
   color: #e6b9b8;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    background-color:#e6b9b8;
+    color: #7893ac; 
+    width: 100%;
+}
+
 h1, h2 {
   font-weight: 600;
   text-align: center;
@@ -33,6 +45,3 @@ p {
   padding: 20px;
 }
 
-img {
-    
-}
