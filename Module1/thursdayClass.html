@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>page title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header><h1 id="header">Header</h1></header>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h2>Article heading</h2>
+        <p style="color: red">This is a red paragraph</p>
+        <p style="color:rgb(0, 255, 0)">Now this is a green paragraph!</p>
+        <a href="https://www.google.com/">More information...</a>
+      </article>
+      <aside id="aside">
+        <h2>Related</h2>
+        <ul>
+          <li>
+            <img
+              src="https://luxuryreaders.com/cdn/shop/files/2_5284ea7f-2a2f-475b-9a06-8da08310f16a.jpg?v=1760362719"
+              alt="Womens' glasses red"
+            />
+          </li>
+          <li>
+            <img
+              src="https://cdn.nimbo.com.au/assets/51de85ddd068f0bc7876/250783691715fdc5baf20ed0/shop/large-26293374463478-anne-et-valentin-alma.png"
+              alt="Womens' glasses tort"
+            />
+          </li>
+        </ul>
+      </aside>
+      <form action="/action_page">
+        <div>
+          <label for="firstName">First name:</label><br />
+          <input type="text" id="firstName" name="firstName" value="Joel" />
+        </div>
+        <div>
+          <label for="lastName">Last name:</label><br />
+          <input type="text" id="lastName" name="lastName" value="Doe" />
+        </div>
+        <div>
+          <label for="shippingAddress">Address:</label><br />
+          <input type="text" id="shippingAddress" name="shippingAddress" value="123 Charming Ave" />
+        </div>
+        <button id="orderBtn">Order Now</button>
+      </form>
+    </section>
+    <footer>
+      <p>@copyright 2050 by nobody. all rights reversed</p>
+      <h1>JavaScript Change style Demo</h1>
+      <p id="demo">JavaScript can change the style of an HTML element.</p>
+      <button id="helloBtn">Say Hello</button>
+    </footer>
+
+    <!-- This starts my JavaScript component-->
+    <script>
+      function helloWorld() {
+        document.getElementById("demo").style.color = "red";
+      }
+      document.getElementById("header").innerText = "Hello JavaScript";
+      document.getElementById("aside").style.backgroundColor = "green";
+
+      const button = document.getElementbyId("helloBtn");
+      button.addEventListener("click", helloWorld);
+    </script>
+  </body>
+</html>
