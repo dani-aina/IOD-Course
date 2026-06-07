@@ -51,3 +51,24 @@ undefined == null // true
 undefined === null // false
 
 " \t \n" - 2 //Whitespace strings (spaces, tabs \t, newlines \n) convert to 0 when used with math operators, so 0 - 2 = -2.
+
+
+// ============ Exercise 2 ============ 
+/*Which of the below are not giving the right answer? 
+Why are they not correct? How can we fix them?*/
+
+let three = "3"
+let four = "4"
+let thirty = "30"
+
+let addition = three + four
+console.log(addition)
+// this returns 34 in the console because they are declared as strings rather than numbers
+//  and when js sees the + sign, it is treated as a string, not a number...concatanation
+
+
+/* Since both are strings, JavaScript compares them alphabetically (like a dictionary), not numerically.
+It compares the first character: "3" vs "4" — and since "3" comes before "4" alphabetically, "30" is considered less than "4".*/
+
+
+// ============ Exercise 3 ============ 
