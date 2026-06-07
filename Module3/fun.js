@@ -28,5 +28,26 @@ true + false // this will return 1
 "2" * "3" // returns 6
 
 4 + 5 + "px" // returns 45px
-
 // it actually returns 9px .... this confused me, ask in class //
+
+"$" + 4 + 5 // returns $45
+
+"4" - 2 // returns 2
+
+"4px" - 2 // returns NaN
+
+"  -9  " + 5 // returns -4
+// actually returns -9   5 becaue " -9 " is a string
+
+"  -9  " - 5 // returns -14
+
+null + 1 // returns 1
+
+undefined + 1 // returns 1
+// actually returns NaN because undefined has no numeric value
+
+undefined == null // true
+
+undefined === null // false
+
+" \t \n" - 2 //Whitespace strings (spaces, tabs \t, newlines \n) convert to 0 when used with math operators, so 0 - 2 = -2.
