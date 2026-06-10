@@ -72,3 +72,17 @@ It compares the first character: "3" vs "4" — and since "3" comes before "4" a
 
 
 // ============ Exercise 3 ============ 
+
+/*console will print: 
+"#2 zero is true"
+"negative is true"
+"positive is true"*/
+
+// ============ Exercise 4 ============ 
+
+let a = 2, b = 3;
+let result = `${a} + ${b} is `;
+
+result += (a + b < 10) ? 'less than 10': 'greater than 10'
+
+// ============ Exercise 5 ============ 
