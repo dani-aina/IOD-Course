@@ -220,8 +220,34 @@ console.log(cat2)
 
 // ============ Exercise 10 ============
 
+//a,b,c
 function Person(name, age) {
     this.name = name;
     this.age = age;
     this.human = true;
+    this.canDrive = function() {
+        return this.age >= 16;
+    }
 }
+
+const janna = new Person("Janna", 33);
+const peter = new Person("Peter", 8);
+
+console.log(janna.canDrive());
+console.log(peter.canDrive());
+
+//d
+
+class PersonClass {
+constructor(first, last, age) {
+    this.first = first;
+    this.last = last;
+    this.age = age;
+    }
+    canDrive() {
+        return this.age >= 16;
+    }
+}
+
+let user3 = new Person("Karl", 34 );
+console.log(user3.canDrive());
