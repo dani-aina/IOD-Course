@@ -185,14 +185,14 @@ for (let key in melbourne) {
 //a
 const teamSports = ["Hockey", "Cricket", "Volleyball"];
 
-let moreSports = teamSports;
+let moreSports = [...teamSports];
 teamSports.unshift("Skateboarding", "Swimming");
 teamSports.push("Squash");
 
 console.log(teamSports);
 
 //b
-let dog1 = "Bingo";
+let dog1 = 'Bingo';
 let dog2 = dog1;
 
 dog2 = 'Lassie';
@@ -205,13 +205,23 @@ let cat1 = {
     breed: 'Siberian'
 };
 
-cat2 = cat1;
+let cat2 = {...cat1};
 
 cat2.name = 'Charlotte'
 cat2.breed = 'DSH'
+
 console.log(cat1)
 console.log(cat2)
 
 //d
+//because in the dog1 and dog2 case, it is a primitive and dog1 remains untouched. In the cat1 and cat2 cause, objects do change
 
-//e
+//e - shallow copy using ...
+
+// ============ Exercise 10 ============
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.human = true;
+}
