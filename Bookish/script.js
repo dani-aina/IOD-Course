@@ -5,7 +5,12 @@ fetch(
 )
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    const books = data.results.books;
+
+    const container = document.getElementById("books-container");
+    books.forEach((book) => {
+      console.log(book.title);
+    });
   })
   .catch((error) => {
     console.log("Error:", error);
