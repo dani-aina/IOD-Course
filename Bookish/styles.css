@@ -26,6 +26,12 @@ section {
     height: auto;
     display: block;
 }
+.start {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 40px;
+}
 
 footer {
     text-align: center;
