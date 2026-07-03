@@ -6,12 +6,14 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     const books = data.results.books;
+    const newBooks = books.map(function (book) {
+      return {
+        title: book.title,
+        author: book.author,
+        image: book.book_image,
+      };
+    });
+    console.log(newBooks);
 
     const container = document.getElementById("books-container");
-    books.forEach((book) => {
-      console.log(book.title);
-    });
-  })
-  .catch((error) => {
-    console.log("Error:", error);
   });

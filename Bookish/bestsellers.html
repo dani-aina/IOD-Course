@@ -18,7 +18,7 @@
     <title>Bookish</title>
   </head>
   <body>
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Bookish</a>
         <button
@@ -43,10 +43,20 @@
             <li class="nav-item">
               <a class="nav-link" href="bestsellers.html">Best Sellers</a>
             </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <section id="books-container"></section>
+    <section>
+      <h4>The New York Times' Bestsellers List</h4>
+      <p>Every Wednesday evening, we upload the NYT's bestsellers for you!</p>
+    </section>
+    <template id="book-template">
+      <div class="book-card">
+        <h5 class="book-title"></h5>
+        <p>By: <span class="book-author"></span></p>
+      </div>
+    </template>
     <footer>
       <p>&copy; 2026 Bookish. All rights reserved.</p>
     </footer>
