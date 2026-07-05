@@ -19,7 +19,9 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary my-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Bookish</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/bookish-logo.png" alt="bookish-logo" height="50"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,14 +36,17 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="books.html">My Books</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="library.html">Library</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="bestsellers.html">Best Sellers</a>
             </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="profile-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -52,14 +57,17 @@
       </p>
       <div class="search-wrapper">
         <div class="search-box">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" class="form-control search-input" placeholder="Search Library...">
-            <button class="btn btn-primary search-button">
-                    Search
-                </button>
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            class="form-control search-input"
+            placeholder="Search Library..."
+          />
+          <button class="btn btn-primary search-button">Search</button>
         </div>
-    </div>
-      <img class="library-image"
+      </div>
+      <img
+        class="library-image"
         src="images/library-home.png"
         alt="graphic with classic novels in 5 x 3 grid"
       />
@@ -67,5 +75,13 @@
     <footer>
       <p>&copy; 2026 Bookish. All rights reserved.</p>
     </footer>
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>
