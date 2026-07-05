@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Bookish</title>
   </head>
   <body>
@@ -43,19 +48,39 @@
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
-            <li class="profile-item">
+            <li class="nav-item profile-item">
               <a class="nav-link" href="profile.html">Profile</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="library">
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div
+        id="searchToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Bookish</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Your search results...</div>
+      </div>
+    </div>
+    <section>
       <p>
         Search for books you would like to read or add to your collection for
         later!
       </p>
-      <div class="search-wrapper">
+      <div class="search-wrapper search-bar">
         <div class="search-box">
           <i class="fas fa-search search-icon"></i>
           <input
@@ -76,6 +101,17 @@
       <p>&copy; 2026 Bookish. All rights reserved.</p>
     </footer>
     <script>
+      const searchButton = document.querySelector(".search-button");
+      const searchInput = document.querySelector(".search-input");
+      const searchToastEl = document.getElementById("searchToast");
+      const toastBody = searchToastEl.querySelector(".toast-body");
+      const searchToast = new bootstrap.Toast(searchToastEl);
+
+      searchButton.addEventListener("click", () => {
+        toastBody.textContent = `Your search results for "${searchInput.value}"...`;
+        searchToast.show();
+      });
+
       const currentPage = window.location.pathname.split("/").pop();
       document.querySelectorAll(".nav-link").forEach((link) => {
         if (link.getAttribute("href") === currentPage) {

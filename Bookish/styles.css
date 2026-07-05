@@ -6,6 +6,10 @@ body {
     background-color: #f8f9fa;
 }
 
+section {
+    text-align: center;
+}
+
 /* nav bar styling */
 
 .navbar > .container-fluid {
@@ -47,7 +51,7 @@ h4 {
     padding: 40px;
 }
 
-.library img {
+.library-image {
     width: 100%;
     height: auto;
     display: block;
@@ -85,6 +89,34 @@ footer {
 }   
 
 /* ========== library.html styles ======= */
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-button {
+    margin-left: 8px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    color: #999;
+    pointer-events: none;
+}
+
+.search-input {
+    padding-left: 32px;
+    width: 250px;
+}
 
 .library-image {
     padding: 60px;
