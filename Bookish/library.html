@@ -17,7 +17,7 @@
     <title>Bookish</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Bookish</a>
         <button
@@ -50,7 +50,16 @@
         Search for books you would like to read or add to your collection for
         later!
       </p>
-      <img
+      <div class="search-wrapper">
+        <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="form-control search-input" placeholder="Search Library...">
+            <button class="btn btn-primary search-button">
+                    Search
+                </button>
+        </div>
+    </div>
+      <img class="library-image"
         src="images/library-home.png"
         alt="graphic with classic novels in 5 x 3 grid"
       />

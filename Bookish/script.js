@@ -16,4 +16,15 @@ fetch(
     console.log(newBooks);
 
     const container = document.getElementById("books-container");
+    const template = document.getElementById("book-template");
+
+    const newCards = newBooks.map(function (book) {
+      const clone = template.content.cloneNode(true);
+      clone.querySelector(".book-title").innerText = book.title;
+      clone.querySelector(".book-author").innerText = book.author;
+      clone.querySelector(".book-image").src = book.image;
+      clone.querySelector(".book-image").alt = book.title;
+      return clone;
+    });
+    container.append(...newCards);
   });
