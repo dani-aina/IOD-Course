@@ -7,7 +7,13 @@ body {
 }
 
 section {
+    margin: 10px;
     text-align: center;
+}
+
+
+h4 {
+    text-align: center
 }
 
 /* nav bar styling */
@@ -33,11 +39,25 @@ section {
     color: #4b7ff7 !important;
 }
 
-h4 {
-    margin: 20px;
-    padding: 50px;
-    text-align: center
-}   
+/* ==============home page styling================ */
+
+
+.home-layout {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.carousel-wrapper {
+  max-width: 100%;
+  flex: 1;
+}
+
+.home-text {
+  flex: 1;
+}
+   
 
 .pie-chart {
     width: 100%;
