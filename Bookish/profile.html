@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <title>Bookish</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/bookish-logo.png" alt="bookish-logo" height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bestsellers.html">Best Sellers</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="profile-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h4 class="profile-text">Hello User!</h4>
+    <section class="user-profile">
+      <div class="profile-card" style="width: 18rem">
+        <div class="card-body">
+          <h4 class="card-title">Reading Statistics</h4>
+          <p class="card-text">Track your reading progress here!</p>
+          <a href="stats.html" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+      <div class="profile-card" style="width: 18rem">
+        <div class="card-body">
+          <h4 class="card-title">My Lists</h4>
+          <p class="card-text">
+            View all your books in one easy to access place!
+          </p>
+          <a href="lists.html" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+      <div class="profile-card" style="width: 18rem">
+        <div class="card-body">
+          <h4 class="card-title">Reviews</h4>
+          <p class="card-text">
+            Review and rate books you like, and the ones you don't!
+          </p>
+          <a href="reviews.html" class="btn btn-primary">Go</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2026 Bookish. All rights reserved.</p>
+    </footer>
+  </body>
+  <script>
+    const currentPage = window.location.pathname.split("/").pop();
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</html>
