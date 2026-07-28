@@ -1,40 +1,23 @@
 //‍​‌‍==============𝗝𝗦 𝗜𝗻𝘁𝗲𝗿𝗺𝗲𝗱𝗶𝗮𝘁𝗲 𝗟𝗮𝗯=============
 
-/*===========1 Create a function that takes a string as a parameter and returns the string with the first
-character of each word changed into a capital letter, as in the example below. Test it with
-different strings. */
-
+//===========1
 function ucFirstLetters(str) {
-  let strArray = str.split(" "); // Split the string into an array of words
-  for (let i = 0; i < strArray.length; i++) {
-    strArray[i] = strArray[i].charAt(0).toUpperCase() + strArray[i].slice(1); //Using for loop to iterate through the array and capitalize the first letter of each wordS
-  }
-  return strArray.join(" ");
+  return str;
 }
+console.log(ucFirstLetters("los angeles"));
 
-console.log(ucFirstLetters("hello world! this is a test string."));
-
-/*===========2a Create a function truncate(str, max) that truncates a given string of text if its total
-length is greater than the max length. It should return either the truncated text, with an
-ellipsis (...) added to the end if it was too long, or the original text otherwise. */
-
+//===========2
 const str =
-  "This is a very long sentence to test the truncating function in the console log";
+  "I am typing a super long sentence so that I can test this new function that I am learning!";
 
 function truncate(str, max) {
   if (str.length > max) {
     return str.slice(0, max) + "...";
-  } else {
-    return str;
   }
+  return str;
 }
-console.log(truncate(str, 20));
 
-//2b Write another variant of the truncate function that uses a conditional operator.
-
-function truncate(str, max) {
-  return str.length > max ? str.slice(0, max) + "..." : str;
-}
+//console.log(truncate("I am typing a super long sentence so that I can test this new function that I am learning!", 10))
 
 //===========3
 const animals = ["Tiger", "Giraffe"];

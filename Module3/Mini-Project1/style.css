@@ -1,0 +1,12 @@
+section {
+    padding: 2rem 0;
+    margin: 20px
+}
+
+
+
+footer {
+    display: flex;
+    position: sticky;
+    bottom: 0;
+}
